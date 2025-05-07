@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+</head>
+<body>
+  
+      <div class="container mt-5">
+          <div class="row">
+             <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                      <form id="stdForm">
+                          <div class="form-group">
+                             <label for="fname">Fname</label>
+                              <input id="fname" class="form-control" type="text" required>
+                          </div>
+                          <div class="form-group">
+                           <label for="lname">Lname</label>
+                            <input id="lname" class="form-control" type="text" required>
+                          </div>
+
+                          <div class="form-group">
+                           <label for="contact">Contact</label>
+                            <input id="contact" class="form-control" type="text" required>
+                          </div>
+
+
+                          <div class="form-group">
+                           <label for="email">Email</label>
+                            <input id="email" class="form-control" type="text" required>
+                          </div>
+                      
+
+                           <button type="button" class="btn btn-primary btn-lg btn-block d-none" id="stdUpdateBtn">Update Student</button>
+                           <button type="submit" class="btn btn-primary btn-lg btn-block" id="stdAddBtn">Add Student</button>
+
+
+                      </form>
+                    </div>
+                </div>
+             </div>
+
+
+             <div class="col-md-8">
+                 <div class="card">
+                    <div class="card-body">
+                         <div class="table-responsive">
+                            <table class="table table-bordered">
+                                 <thead>
+                                     <tr>
+                                        <th>Sr.No.</th>
+                                        <th>Fname</th>
+                                        <th>Lname</th>
+                                        <th>Contact</th>
+                                        <th>Email</th>
+                                        <th>Edit</th>
+                                        <th>Remove</th>
+                                     </tr>
+
+                                 </thead>
+
+                                 <tbody id="stdConatiner">
+                                    <!-- <tr>
+                                       <td>1</td>
+                                       <td>john</td>
+                                       <td>Doe</td>
+                                       <td>1236547895</td>
+                                       <td>john@.com</td>
+                                       <td class="text-center"><i class="fa-solid fa-pen-to-square text-success"></i></td>
+                                       <td class="text-center"><i class="fa-solid fa-trash-can text-danger"></i></td>
+                                    </tr> -->
+                                 </tbody>
+                            </table>
+                         </div>
+                    </div>
+                 </div>
+             </div>
+          </div>
+      </div>
+
+
+
+
+
+
+
+<script src="./assets/js/app.js"></script>
+</body>
+</html>
